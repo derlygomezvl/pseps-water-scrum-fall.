@@ -1,0 +1,83 @@
+{
+  "caso": "Water-Scrum-Fall",
+  "descripcion": "Proceso núcleo Water-Scrum-Fall (West et al. 2011; Theocharis et al. 2015; Yahya y Maidin 2022) y seis actividades candidatas de reemplazo. Datos del ejemplo de validación del artículo.",
+
+  "umbrales": { "plena": 0.75, "parcial": 0.5 },
+
+  "artefactos": {
+    "Visión":                      { "firmado": false, "trazable": false, "congelado": false },
+    "SRS":                         { "firmado": true,  "trazable": true,  "congelado": false },
+    "Documento de Diseño":         { "firmado": true,  "trazable": true,  "congelado": true  },
+    "Product Backlog":             { "firmado": false, "trazable": false, "congelado": false },
+    "Sprint Backlog":              { "firmado": false, "trazable": false, "congelado": false },
+    "Incremento":                  { "firmado": false, "trazable": true,  "congelado": false },
+    "Acta":                        { "firmado": true,  "trazable": true,  "congelado": false },
+    "Acta del sprint":             { "firmado": true,  "trazable": true,  "congelado": false }
+  },
+
+  "equivalencias": [
+    { "de": "SRS", "a": "Product Backlog", "cobertura": 0.5,
+      "falta": "prioridad y descomposición",
+      "adaptacion": "El Product Owner prioriza y descompone la SRS en el Product Backlog",
+      "justificacion": "La SRS trae actores, propósito y criterios de aceptación, pero no prioridad ni descomposición" },
+    { "de": "Product Backlog", "a": "SRS", "cobertura": 0.0,
+      "falta": "trazabilidad y firmas",
+      "justificacion": "A las historias de usuario les faltan la trazabilidad y las firmas que exige el contrato tradicional" },
+    { "de": "Sprint Backlog", "a": "Documento de Diseño", "cobertura": 0.0,
+      "falta": "decisiones de diseño aprobadas",
+      "justificacion": "El Sprint Backlog no contiene decisiones de diseño aprobadas" },
+    { "de": "Incremento", "a": "Documento de Diseño", "cobertura": 0.0,
+      "falta": "especificación de diseño",
+      "justificacion": "Producto frente a especificación" },
+    { "de": "Acta", "a": "Product Backlog", "cobertura": 0.0,
+      "falta": "requisitos priorizados",
+      "justificacion": "El acta registra la aceptación; no contiene requisitos priorizados" }
+  ],
+
+  "invariantes": {
+    "tradicional":      ["secuencial", "aprobado_con_firma", "trazabilidad"],
+    "agil_planificar":  ["iterativo", "sin_documento_congelado", "participa_product_owner", "ejecuta_equipo"],
+    "agil_desarrollar": ["iterativo", "sin_documento_congelado", "ejecuta_equipo", "entrega_incremento"],
+    "agil_revisar":     ["iterativo", "sin_documento_congelado", "participa_product_owner", "ejecuta_equipo", "actualiza_product_backlog"]
+  },
+
+  "nucleo": {
+    "orden": ["B1", "B2", "B3", "B4", "B5", "B6"],
+    "bucle": ["B3", "B4", "B5"],
+    "actividades": {
+      "B1": { "nombre": "Elicitar Requisitos", "fase": "Water", "pre": ["Visión"], "post": ["SRS"],
+              "ciclo": "secuencial", "roles": ["Analista", "Cliente"], "invariante": "tradicional" },
+      "B2": { "nombre": "Revisión de Diseño Formal", "fase": "Water", "pre": ["SRS"], "post": ["Documento de Diseño"],
+              "ciclo": "secuencial", "roles": ["Arquitecto", "Cliente"], "invariante": "tradicional" },
+      "B3": { "nombre": "Planificar Sprint", "fase": "Scrum", "pre": ["Product Backlog"], "post": ["Sprint Backlog"],
+              "ciclo": "iterativo", "roles": ["Product Owner", "Equipo"], "invariante": "agil_planificar" },
+      "B4": { "nombre": "Desarrollar Incremento", "fase": "Scrum", "pre": ["Sprint Backlog"], "post": ["Incremento"],
+              "ciclo": "iterativo", "roles": ["Equipo"], "invariante": "agil_desarrollar" },
+      "B5": { "nombre": "Revisar Sprint", "fase": "Scrum", "pre": ["Incremento"], "post": ["Product Backlog"],
+              "ciclo": "iterativo", "roles": ["Product Owner", "Equipo"], "invariante": "agil_revisar" },
+      "B6": { "nombre": "Aceptación Formal", "fase": "Fall", "pre": ["Incremento", "SRS"], "post": ["Acta"],
+              "ciclo": "secuencial", "roles": ["Cliente", "Tester"], "invariante": "tradicional" }
+    }
+  },
+
+  "candidatas": {
+    "S1": { "reemplaza": "B3", "nombre": "Planificar Sprint (Híbrida)",
+            "pre": ["Product Backlog"], "opcionales": ["SRS"], "post": ["Sprint Backlog"],
+            "ciclo": "iterativo", "roles": ["Product Owner", "Equipo"] },
+    "S2": { "reemplaza": "B4", "nombre": "Desarrollar Incremento (Híbrida)",
+            "pre": ["Sprint Backlog", "Documento de Diseño"], "post": ["Incremento"],
+            "ciclo": "iterativo", "roles": ["Equipo"] },
+    "S3": { "reemplaza": "B5", "nombre": "Revisar Sprint con Gate Formal",
+            "pre": ["Incremento"], "post": ["Product Backlog", "Acta del sprint"],
+            "ciclo": "iterativo", "roles": ["Product Owner", "Equipo", "Tester"] },
+    "S4": { "reemplaza": "B5", "nombre": "Pruebas de Aceptación Formal",
+            "pre": ["Documento de Diseño"], "post": ["Acta"],
+            "ciclo": "secuencial", "roles": ["Tester", "Cliente"] },
+    "S5": { "reemplaza": "B1", "nombre": "Escribir Historias de Usuario",
+            "pre": ["Visión"], "post": ["Product Backlog"],
+            "ciclo": "iterativo", "roles": ["Product Owner", "Equipo"] },
+    "S6": { "reemplaza": "B5", "nombre": "Revisión Formal de Requisitos",
+            "pre": ["Incremento"], "post": ["SRS"],
+            "ciclo": "iterativo", "roles": ["Product Owner", "Equipo", "Analista"] }
+  }
+}

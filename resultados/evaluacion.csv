@@ -1,0 +1,7 @@
+id,nucleo,candidata,R1,R2,R3,recomendacion,adaptacion
+S1,Planificar Sprint,Planificar Sprint (Híbrida),plena,plena,plena,Recomendable,
+S2,Desarrollar Incremento,Desarrollar Incremento (Híbrida),falla,plena,falla,No recomendable,
+S3,Revisar Sprint,Revisar Sprint con Gate Formal,plena,plena,plena,Recomendable,
+S4,Revisar Sprint,Pruebas de Aceptación Formal,falla,falla,falla,No recomendable,
+S5,Elicitar Requisitos,Escribir Historias de Usuario,plena,falla,falla,No recomendable,
+S6,Revisar Sprint,Revisión Formal de Requisitos,plena,parcial,parcial,Recomendable con precaución,El Product Owner prioriza y descompone la SRS en el Product Backlog

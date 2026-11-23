@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="590" viewBox="0 0 1600 590" font-family="Inter">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b5b1a7"/></marker><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d14343"/></marker></defs>
+<rect width="1600" height="590" fill="white"/>
+<rect x="538" y="22" width="779" height="152" rx="12" fill="#f1f0ed" stroke="#bdbab2" stroke-dasharray="7 6" stroke-width="1.5"/>
+<text x="552" y="44" font-size="15" font-weight="600" fill="#555" text-anchor="start" >Scrum: sprints (se repiten)</text>
+<text x="40" y="44" font-size="15" font-weight="600" fill="#555" text-anchor="start" >Water: fase de Cascada</text>
+<text x="1340" y="44" font-size="15" font-weight="600" fill="#555" text-anchor="start" >Fall: cierre formal</text>
+<rect x="40" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="147.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Elicitar Requisitos</text>
+<text x="147.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >Visión → SRS</text>
+<rect x="300" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="407.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Revisión de Diseño</text>
+<text x="407.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >SRS → Doc. de Diseño</text>
+<rect x="560" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="667.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Planificar Sprint</text>
+<text x="667.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >Backlog → Sprint Backlog</text>
+<rect x="820" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="927.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Desarrollar Incremento</text>
+<text x="927.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >Sprint Backlog → Incremento</text>
+<rect x="1080" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="1187.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Revisar Sprint</text>
+<text x="1187.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >Incremento → Backlog</text>
+<rect x="1340" y="62" width="215" height="92" rx="10" fill="white" stroke="#c9c6bd" stroke-width="2"/>
+<text x="1447.5" y="102" font-size="18" font-weight="600" fill="#2b2b2b" text-anchor="middle" >Aceptación Formal</text>
+<text x="1447.5" y="128" font-size="14.5" font-weight="400" fill="#666" text-anchor="middle" >Incremento → Acta</text>
+<line x1="258" y1="108.0" x2="297" y2="108.0" stroke="#b5b1a7" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="518" y1="108.0" x2="557" y2="108.0" stroke="#b5b1a7" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="778" y1="108.0" x2="817" y2="108.0" stroke="#b5b1a7" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="1038" y1="108.0" x2="1077" y2="108.0" stroke="#b5b1a7" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="1298" y1="108.0" x2="1337" y2="108.0" stroke="#b5b1a7" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="40" y="215" width="215" height="100" rx="10" fill="#fdecec" stroke="#d14343" stroke-width="2.6"/>
+<text x="54" y="239" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#c62828">S5</tspan>  Escribir Historias</text>
+<text x="54" y="260" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >de Usuario</text>
+<text x="54" y="284" font-size="14.5" font-weight="700" fill="#c62828" text-anchor="start" >NO RECOMENDABLE</text>
+<text x="54" y="304" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R2 <tspan fill="#c62828" font-weight="800">✗</tspan>    R3 <tspan fill="#c62828" font-weight="800">✗</tspan></text>
+<rect x="560" y="215" width="215" height="100" rx="10" fill="#e8f5e9" stroke="#3a9a3e" stroke-width="2"/>
+<text x="574" y="239" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#2e7d32">S1</tspan>  Planificar Sprint</text>
+<text x="574" y="260" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >(Híbrida)</text>
+<text x="574" y="284" font-size="14.5" font-weight="700" fill="#2e7d32" text-anchor="start" >RECOMENDABLE</text>
+<text x="574" y="304" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R2 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R3 <tspan fill="#2e7d32" font-weight="800">✓</tspan></text>
+<rect x="820" y="215" width="215" height="100" rx="10" fill="#fdecec" stroke="#d14343" stroke-width="2.6"/>
+<text x="834" y="239" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#c62828">S2</tspan>  Desarrollar</text>
+<text x="834" y="260" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >Incremento (Híbrida)</text>
+<text x="834" y="284" font-size="14.5" font-weight="700" fill="#c62828" text-anchor="start" >NO RECOMENDABLE</text>
+<text x="834" y="304" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#c62828" font-weight="800">✗</tspan>    R2 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R3 <tspan fill="#c62828" font-weight="800">✗</tspan></text>
+<rect x="1080" y="215" width="215" height="100" rx="10" fill="#e8f5e9" stroke="#3a9a3e" stroke-width="2"/>
+<text x="1094" y="239" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#2e7d32">S3</tspan>  Revisar Sprint</text>
+<text x="1094" y="260" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >con Gate Formal</text>
+<text x="1094" y="284" font-size="14.5" font-weight="700" fill="#2e7d32" text-anchor="start" >RECOMENDABLE</text>
+<text x="1094" y="304" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R2 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R3 <tspan fill="#2e7d32" font-weight="800">✓</tspan></text>
+<rect x="1080" y="333" width="215" height="100" rx="10" fill="#fff6d6" stroke="#d4a514" stroke-width="2"/>
+<text x="1094" y="357" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#9a7400">S6</tspan>  Revisión Formal</text>
+<text x="1094" y="378" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >de Requisitos</text>
+<text x="1094" y="402" font-size="14.5" font-weight="700" fill="#9a7400" text-anchor="start" >CON PRECAUCIÓN</text>
+<text x="1094" y="422" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#2e7d32" font-weight="800">✓</tspan>    R2 <tspan fill="#9a7400" font-weight="800">✓ (0.5)</tspan>    R3 <tspan fill="#2e7d32" font-weight="800">✓</tspan></text>
+<rect x="1080" y="451" width="215" height="100" rx="10" fill="#fdecec" stroke="#d14343" stroke-width="2.6"/>
+<text x="1094" y="475" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700" fill="#c62828">S4</tspan>  Pruebas de</text>
+<text x="1094" y="496" font-size="16" font-weight="600" fill="#2b2b2b" text-anchor="start" >Aceptación Formal</text>
+<text x="1094" y="520" font-size="14.5" font-weight="700" fill="#c62828" text-anchor="start" >NO RECOMENDABLE</text>
+<text x="1094" y="540" font-size="15" font-weight="600" fill="#666" xml:space="preserve">R1 <tspan fill="#c62828" font-weight="800">✗</tspan>    R2 <tspan fill="#c62828" font-weight="800">✗</tspan>    R3 <tspan fill="#c62828" font-weight="800">✗</tspan></text>
+<line x1="147.5" y1="156" x2="147.5" y2="212" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="5 5"/>
+<line x1="667.5" y1="156" x2="667.5" y2="212" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="5 5"/>
+<line x1="927.5" y1="156" x2="927.5" y2="212" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="5 5"/>
+<line x1="1187.5" y1="156" x2="1187.5" y2="212" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="155.5" y="200" font-size="13" font-weight="400" fill="#888" text-anchor="start" >sustituye a</text>
+<line x1="1273" y1="315" x2="1273" y2="333" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="4 4"/>
+<line x1="1273" y1="433" x2="1273" y2="451" stroke="#9e9a90" stroke-width="1.6" stroke-dasharray="4 4"/>
+<path d="M407.5,156 L407.5,198 L967.5,198 L967.5,211" fill="none" stroke="#d14343" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<text x="523.75" y="192" font-size="14" font-weight="500" fill="#d14343" text-anchor="middle" >precondición extra</text>
+<rect x="40" y="345" width="995" height="225" rx="12" fill="#fafaf8" stroke="#dedbd3" stroke-width="1.5"/>
+<text x="62" y="379" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="start" >PSEPS: la candidata H reemplaza a la actividad núcleo B solo si</text>
+<text x="62" y="411" font-size="15.5" font-weight="400" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700">R1</tspan>  no exige más: lo que pide H ya lo recibía B</text>
+<text x="62" y="437" font-size="15.5" font-weight="400" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700">R2</tspan>  no entrega menos: H cubre todo lo que entregaba B</text>
+<text x="62" y="463" font-size="15.5" font-weight="400" fill="#2b2b2b" text-anchor="start" ><tspan font-weight="700">R3</tspan>  conserva la invariante: ciclo de vida y principios</text>
+<circle cx="70" cy="508" r="8" fill="#3a9a3e"/>
+<text x="86" y="513" font-size="15" font-weight="500" fill="#2b2b2b" text-anchor="start" >Recomendable: R1–R3 con cobertura plena</text>
+<circle cx="450" cy="508" r="8" fill="#d4a514"/>
+<text x="466" y="513" font-size="15" font-weight="500" fill="#2b2b2b" text-anchor="start" >Con precaución: cobertura 0.5 + adaptación</text>
+<circle cx="70" cy="538" r="8" fill="#d14343"/>
+<text x="86" y="543" font-size="15" font-weight="500" fill="#2b2b2b" text-anchor="start" >No recomendable: falla alguna regla</text>
+</svg>
